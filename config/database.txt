@@ -1,0 +1,36 @@
+CREATE DATABASE helpdesk;
+USE helpdesk;
+CREATE TABLE users(
+userID int primary key auto_increment not null,
+userNome varchar (255),
+userDepartamento varchar(255),
+userSenha varchar(10),
+userEmail varchar(255),
+dataCriacao datetime,
+dataModificacao datetime,
+dataElim datetime,
+est int
+);
+
+CREATE TABLE categoria(
+categoriaID int primary key auto_increment not null,
+categoriaNome varchar(50),
+est int
+);
+
+INSERT INTO categoria (categoriaNome, est) VALUES
+("Redes",1),
+("Infraestrutura",1),
+("Hardware",1),
+("Software",1),
+("Outro",1);
+
+CREATE TABLE chamado(
+chamadoID int primary key auto_increment not null,
+userID int,
+categoriaID int,
+chamadoTitulo varchar(50),
+chamadoDescricao varchar(8000),
+est int
+);
+

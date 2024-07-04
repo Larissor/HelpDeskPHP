@@ -1,3 +1,7 @@
+<?php 
+require_once("../../config/connection.php");
+    if(isset($_SESSION["userID"])){
+?>
 <!DOCTYPE html>
 <html lang="en">
     <?php require_once("../MainHead/head.php");
@@ -8,7 +12,8 @@
 <title>Inicio</title>
     <body>
         <div id="wrapper">
-            <!-- Page Content -->
+
+            <!-- Conteúdo-->
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <div class="row">
@@ -18,6 +23,13 @@
                     </div>
                 </div>
             </div>
+            <!-- Conteúdo -->
+            <script type="text/javascript" src="home.js"></script>
         </div>
     </body>
 </html>
+<?php 
+    }else{
+        header("Location:".Conectar::rota()."index.php");
+    }
+?>

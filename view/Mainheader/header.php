@@ -11,7 +11,7 @@
                 </button>
 
                 <ul class="nav navbar-nav navbar-left navbar-top-links">
-                    <li><a href="#"><i class="fa fa-home fa-fw"></i> Website</a></li>
+                    <li><a href="../home/index.php"><i class="fa fa-home fa-fw"></i> Home</a></li>
                 </ul>
 
                 <ul class="nav navbar-right navbar-top-links">
@@ -71,7 +71,9 @@
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> secondtruth <b class="caret"></b>
+                            <i class="fa fa-user fa-fw"></i> 
+                            <?php echo $_SESSION["userNome"]?>
+                            <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -79,11 +81,13 @@
                             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="../logout/"><i class="fa fa-sign-out fa-fw"></i> Sair</a>
+                            <li><a href="../logout/logout.php"><i class="fa fa-sign-out fa-fw"></i> Sair</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+
+                <input type="hidden" id="userID" value="<?php echo $_SESSION["userID"] ?>">
                 <!-- /.navbar-top-links -->
 
                 <div class="navbar-default sidebar" role="navigation">
