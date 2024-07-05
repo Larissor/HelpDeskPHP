@@ -5,8 +5,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../public/css/metisMenu.min.css" rel="stylesheet">
+       <link href="../../public/morris.css" rel="stylesheet"> 
+       <link href="../../public/css/metisMenu.min.css" rel="stylesheet">
         <link href="../../public/css/startmin.css" rel="stylesheet">
+        <link href="../../public/css/timeline.css" rel="stylesheet">
+
+        
+
         <link href="../../public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../../public/css/datatables/datatables.min.css">
         <link rel="stylesheet" href="../../public/css/separate/vendor/datatables-net.min.css">

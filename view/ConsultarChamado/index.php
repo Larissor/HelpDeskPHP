@@ -32,10 +32,11 @@ require_once("../../config/connection.php");
                                     <table class="table table-striped table-bordered table-hover" id="chamado_data">
                                         <thead>
                                             <tr>
-                                                <th>Número </th>
-                                                <th>Categoria</th>
+                                                <th style="width: 5%;">Número </th>
+                                                <th style="width: 8%;">Categoria</th>
                                                 <th>Título</th>
-                                                <th>Criado em</th>
+                                                <th>Estado</th>
+                                                <th style="width: 10%;">Criado em</th>
                                                 <th></th>
                                             </tr>
                                         </thead>

@@ -7,3 +7,7 @@
 
         <script src="../../public/js/dataTables/jquery.dataTables.min.js"></script>
         <script src="../../public/js/dataTables/dataTables.bootstrap.min.js"></script>
+
+        <script src="../js/raphael.min.js"></script>
+        <script src="../js/morris.min.js"></script>
+        <script src="../js/morris-data.js"></script>

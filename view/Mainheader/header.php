@@ -88,6 +88,7 @@
                 </ul>
 
                 <input type="hidden" id="userID" value="<?php echo $_SESSION["userID"] ?>">
+                <input type="hidden" id="rol_id" value="<?php echo $_SESSION["rol_id"] ?>">
                 <!-- /.navbar-top-links -->
 
                 <div class="navbar-default sidebar" role="navigation">

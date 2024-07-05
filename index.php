@@ -26,10 +26,14 @@
                 <div class="col-md-4 col-md-offset-4">
                     <div class="login-panel panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Portal de Chamados</h3>
+                            <h3 class="panel-title" id="lbltitulo">Portal de Chamados</h3>
                         </div>
                         <div class="panel-body">
+
+                            
+
                             <form class="sign-box" action="" id="login_form" method="post" role="form">
+                            <input type="hidden" id="rol_id" name="rol_id" value="1">
                                 <fieldset>
                                     <div class="form-group">
                                         <input class="form-control" id="userEmail" name="userEmail" placeholder="E-mail"  type="text" autofocus>
@@ -61,6 +65,11 @@
                             }
                         }
                     ?>
+                                    
+                                    <div class="float-left reset">
+                                        <a href="#" id="btnsuporte">Entrar como suporte</a>
+                                    </div>
+                                    <br>
                                     <button type="submit"  class="btn btn-lg btn-success btn-block">Entrar</button>
                                 </fieldset>
                             </form>
@@ -73,6 +82,7 @@
         <script src="public/js/bootstrap.min.js"></script>
         <script src="public/js/metisMenu.min.js"></script>
         <script src="public/js/startmin.js"></script>
+        <script type="text/javascript" src="index.js"></script>
 
     </body>
 </html>
