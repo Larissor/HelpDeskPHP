@@ -16,10 +16,42 @@ require_once("../../config/connection.php");
             <!-- Conteúdo-->
             <div id="page-wrapper">
                 <div class="container-fluid">
-                    <div class="row">
+                <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Blank</h1>
-                        </div>
+                        <h1 class="page-header">Consultar chamados</h1>
+                        <div class="row">
+                    <div class="col-lg-12">
+                        
+                    <div class="dataTable_wrapper">
+
+
+
+                                        <div class="row">
+            
+                                <div class="dataTable_wrapper">
+                                    <table class="table table-striped table-bordered table-hover" id="chamado_data">
+                                        <thead>
+                                            <tr>
+                                                <th>Número </th>
+                                                <th>Categoria</th>
+                                                <th>Título</th>
+                                                <th>Criado em</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+					                    </tbody>
+				                    </table>
+			</div>
+                                </div>
+
+
+
+
+
+
+                    <div class="row">
                     </div>
                 </div>
             </div>

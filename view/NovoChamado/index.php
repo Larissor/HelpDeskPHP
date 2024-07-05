@@ -27,23 +27,33 @@ require_once("../../config/connection.php");
                             </div>
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <form role="form">
-                                            <div class="form-group">
-                                                <label>Título</label>
-                                                <input  type="text" class="form-control">
-                                                <label>Descrição</label>
-                                                <textarea id="descricaoChamado" class="form-control" rows="3"></textarea>
-                                                <label>Categoria</label>
-                                                <select id="categoriaID" class="form-control">
-                                                    
-                                                </select>
-                                            </div>
-                                            <button type="button" class="btn btn-primary">Enviar</button>
 
-                        </div>
-                    </div>
-                </div>
+
+                                    <form method="post" id="chamado_form">
+                                        <input type="hidden" id="userID" name="userID" value="<?php echo $_SESSION["userID"] ?>">
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+
+                                                    <label for="chamadoTitulo">Título</label>
+                                                    <input id="chamadoTitulo", name="chamadoTitulo" type="text" class="form-control">
+
+                                                    <label for="chamadoDescricao">Descrição</label>
+                                                    <textarea id="chamadoDescricao" name="chamadoDescricao" class="form-control" rows="3"></textarea>
+
+                                                    <label for="categoriaID">Categoria</label>
+                                                    <select id="categoriaID" name="categoriaID" class="form-control">
+                                                        
+                                                    </select>
+                                                    <br>
+                                                    <button type="submit" value="add" name="action" onclick="alert('Enviado com sucesso')"  class="btn btn-primary">Enviar</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                </div>
             </div>
             <!-- Conteúdo -->
             <script type="text/javascript" src="novochamado.js"></script>
